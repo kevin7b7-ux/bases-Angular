@@ -1,0 +1,13 @@
+<h1>Naruto Characters</h1>
+<hr>
+
+<div class="row">
+
+    <div class="col">
+        <naruto-list (onDeleteCharacter)="onDeleteCharacter($event)" [characterList]="characters"></naruto-list>
+    </div>
+
+    <div class="col">
+       <naruto-add-character (onNewCharacter)="onNewCharacter($event)"></naruto-add-character>
+    </div>
+</div>
